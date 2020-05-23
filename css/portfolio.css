@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.rowpic{
+    width: 10%;
+    height: 5rem;  
+}
+.picturerow{
+    text-align: center;
+    padding-top: 1rem;
+
+}
+.empty{
+
+    background-color: #AAAAAA;
+}
+.carouseloptions{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: roboto;
+    color: #546a7b;
+}
+.residentialcarousel{
+
+}
+.commercialcarousel{
+    display: none;
+}
+
+#homelink{
+    text-decoration: none;
+    color: #AAAAAA;
+}
+@media only screen and (max-width: 580px) {
+    .carouseloptions{
+        padding-top: 13rem;
+        margin-top: 0;
+    }
+}

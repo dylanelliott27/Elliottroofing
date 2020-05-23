@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+</head>
+<body>
+    <main class="content">
+        <nav class="nav navmobilealignment">
+            <img id="phonenav" src="./pictures/call-24px.svg">
+            <a href="/index.html"><img src="./pictures/goodroofinglogo (4).png" class="logo"></img></a>
+            <li id="burger" class="burger">
+                <img id="hamburgermenu" src="./pictures/menu-24px.svg">
+            </li>
+            <ul id="navunorderedlist">
+                <li class="navitem">
+                    <a id="homelink" href="./index.html">Home</a>
+                </li>
+                <li class="navitem">
+                    <a id="questionformlink" href="#questionform">Contact Us</a>
+                </li>
+                <li class="active navitem">
+                    <a href="./portfolio.html" class="portfoliolinkactive">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="carouseloptions">
+            <h1 style="border-bottom: 1px solid black" id="residentialtitle">Residential</h1>
+            <h1 style="color: #AAAAAA" id="commercialtitle">Commercial</h1>
+        </div>
+        <div id="residentialcarousel" class="residentialcarousel">
+            <div class="carousel">
+                <div class="pictureone">
+                    <img id="firstimage" class="picone" src="./pictures/pexels-photo-259751.jpeg">
+                </div>
+                <div class="carouselcontrols">
+                    <i id="leftarrow" class="arrow left"></i>
+                    
+                    <i id="rightarrow" class="arrow right"></i>
+                </div>
+            </div>
+            <div class="picturerow">
+                <img style="filter:brightness(50%)" class="rowpic" id="rowpic" src="./pictures/pexels-photo-259751.jpeg">
+                <img class="rowpic" id="rowpic" src="./pictures/pexels-photo-secondhouse.jpeg">
+                <img class="rowpic" id="rowpic" src="./pictures/roof-plate-tiles-brick-black-48882.jpeg">
+                <img class="rowpic" id="rowpic" src="./pictures/pexels-photo-259751.jpeg">
+                <img class="rowpic" id="rowpic" src="./pictures/pexels-photo-259751.jpeg">
+                <img class="rowpic empty" id="empty">
+                <img class="rowpic empty" id="empty">
+                <img class="rowpic empty" id="empty">
+                <img class="rowpic empty" id="empty">
+            </div>
+        </div>
+    </main>
+    <script src="./js/portfoliocarousel.js"></script>
+    <script src="./js/mobilenav.js"></script>
+</body>
+</html>

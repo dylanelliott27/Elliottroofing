@@ -3,6 +3,7 @@ const navUnorderedList = document.getElementById('navunorderedlist');
 const navitems = document.getElementsByClassName('navitem');
 const hamburgerMenu = document.getElementById('hamburgermenu');
 const navItemArray = Array.from(navitems); //since getelementsbyclass name returns htmlcollection, convert to iterable array
+const header = document.querySelector('header');
 
 
 let navOpenStatus = false;
@@ -15,7 +16,8 @@ hamburgerMenuButton.addEventListener('click', () => {
             })
             navUnorderedList.setAttribute('class', 'mobilenav');
             navOpenStatus = true;
-            hamburgerMenu.setAttribute('src', './close-24px.svg');
+            hamburgerMenu.setAttribute('src', './pictures/close-24px.svg');
+            header.setAttribute('style', 'padding-top: 20rem');
             break;
         case true:
             navItemArray.forEach(item => {
@@ -23,7 +25,8 @@ hamburgerMenuButton.addEventListener('click', () => {
             })
             navUnorderedList.classList.remove('mobilenav')
             navOpenStatus = false;
-            hamburgerMenu.setAttribute('src', 'menu-24px.svg');
+            hamburgerMenu.setAttribute('src', './pictures/menu-24px.svg');
+            header.setAttribute('style', 'padding-top: 10rem');
             break;
     }
 

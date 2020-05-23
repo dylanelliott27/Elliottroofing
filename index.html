@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elliott Roofing & Sheetmetal</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <main class="content">
         <nav class="nav navmobilealignment">
-            <img id="phonenav" src="call-24px.svg">
-            <img src="goodroofinglogo (4).png" class="logo">
+            <img id="phonenav" src="./pictures/call-24px.svg">
+            <a href="/index.html"><img src="./pictures/goodroofinglogo (4).png" class="logo"></img></a>
             <li id="burger" class="burger">
-                <img id="hamburgermenu" src="menu-24px.svg">
+                <img id="hamburgermenu" src="./pictures/menu-24px.svg">
             </li>
             <ul id="navunorderedlist">
-                <li class="navitem" class="active">
+                <li class="navitem active">
                     Home
                 </li>
                 <li class="navitem">
-                    Contact Us
+                    <a id="questionformlink" href="#questionform">Contact Us</a>
                 </li>
                 <li class="navitem">
-                    Portfolio
+                    <a href="./portfolio.html" class="portfoliolink">Portfolio</a>
                 </li>
             </ul>
         </nav>
         <header>
             <div class="carousel">
                 <div class="pictureone">
-                    <img id="firstimage" class="picone" src="pexels-photo-259751.jpeg">
-                    <img id="secondimage" hidden class="picone pictwo" src="pexels-photo-secondhouse.jpeg">
-                    <img id="thirdimage" hidden class="picone picthree" src="roof-plate-tiles-brick-black-48882.jpeg">
+                    <img id="firstimage" class="picone" src="./pictures/pexels-photo-259751.jpeg">
+                    <img id="secondimage" hidden class="picone pictwo" src="./pictures/pexels-photo-secondhouse.jpeg">
+                    <img id="thirdimage" hidden class="picone picthree" src="./pictures/roof-plate-tiles-brick-black-48882.jpeg">
                 </div>
                 <div class="carouselcontrols">
                     <i id="leftarrow" class="arrow left"></i>
@@ -47,18 +48,19 @@
                 </div>
             </div>
         </header>
-        <main>
-            <h1 class="whoareweheader">WHO ARE WE?</h1>
+        <main class="whoarewecontainer">
+            <h1 class="whoareweheader">ROOFING & SHEETMETAL EXPERTS</h1>
             <div class="whoarewecontent">
-                <img class="whoareweimg" src="./menu_book-24px.svg">
+                <img class="whoareweimg" src="./pictures/menu_book-24px.svg">
                 <p class="whoarewetext">Elliott Roofing and Sheetmetal is a family owned, roofing solutions company whom specializes in commercial roofs. With over 20+ years of experience, we have seen every situation imagineable and have a solution for you, all while keeping our pricing competitive.</p>
             </div>
         </main>
+        
         <section class="helpsection">
             <h1 class="howcanhelpheader">HOW CAN WE HELP?</h1>
             <div class="helpcardscontainer">
                 <div class="residentialcard">
-                    <img class="residentialimg" src="./house-24px.svg">
+                    <img class="residentialimg" src="./pictures/house-24px.svg">
                     <h3 class="residentialtitle">RESIDENTIAL</h3>
                     <div class="residentialoptions">
                         <ul>
@@ -87,7 +89,7 @@
                     <a class="freequote">Free Quote</a>
                 </div>
                 <div class="commercialcard">
-                    <img class="commercialimg" src="./apartment-24px.svg">
+                    <img class="commercialimg" src="./pictures/apartment-24px.svg">
                     <h3 class="commercialtitle">COMMERCIAL</h3>
                     <div class="commercialoptions">
                         <ul>
@@ -116,7 +118,7 @@
                     <a class="freequote">Free Quote</a>
                 </div>
                 <div class="residentialcard">
-                    <img class="repairsimg" src="./build-24px.svg">
+                    <img class="repairsimg" src="./pictures/build-24px.svg">
                     <h3 class="residentialtitle">REPAIRS</h3>
                     <div class="residentialoptions">
                         <ul>
@@ -148,31 +150,31 @@
         </section>
         <section class="questionsection">
             <h1 class="questionsheader">QUESTIONS?</h1>
-            <form class="questionform">
+            <form id="questionform" class="questionform">
                 <input placeholder="Name"class="nameinput" />
-                <img class="personinputimg" src="./person-24px.svg" />
+                <img class="personinputimg" src="./pictures/person-24px.svg" />
                 <input placeholder="E-mail address" class="emailinput" />
-                <img class="emailinputimg" src="./email-24px.svg" />
+                <img class="emailinputimg" src="./pictures/email-24px.svg" />
                 <textarea class="questioninput"></textarea>
-                <img class="questioninputimg" src="create-24px.svg" />
+                <img class="questioninputimg" src="./pictures/create-24px.svg" />
                 <button class="sendquestion">SEND</button>
             </form>
         </section>
     </main>
-<script src="./carousel.js"></script>
-<script src="./mobilenav.js"></script>
+<script src="./js/carousel.js"></script>
+<script src="./js/mobilenav.js"></script>
 </body>
 <footer>
     <div class="phonenumbercontainer">
-        <img src="./call-24px.svg">
+        <img src="./pictures/call-24px.svg">
         <p>647-444-4423</p>
     </div>
     <div class="emailcontainer">
-        <img src="./email-24px.svg">
+        <img src="./pictures/email-24px.svg">
         <p>sales@elliottroofing.ca</p>
     </div>
     <div class="locationcontainer">
-        <img src="./location_on-24px.svg">
+        <img src="./pictures/location_on-24px.svg">
         <p>Toronto, Ontario</p>
     </div>
 </footer>
