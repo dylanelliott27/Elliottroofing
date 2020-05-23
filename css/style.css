@@ -459,7 +459,7 @@ nav > ul > li:hover{
  }
  .personinputimg{
     left: 22.1%;
-    top: 2.5%;
+    top: 1.5%;
 }
 .emailinputimg{
     left: 22.1%;
@@ -467,10 +467,10 @@ nav > ul > li:hover{
 }
 .questioninputimg{
     left: 23%;
-    top: 49%;
+    top: 50%;
 }
 .whoarewetext{
-    font-size: .9rem;
+    font-size: .8rem;
 }
 /*--- nav stuff */ 
 
